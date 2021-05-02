@@ -3,11 +3,14 @@ let f = (a: number) => {
 	return a;
 }
 
+enum Role {SUPERVISOR, READ_ONLY, AUTHOR = 7, GUEST }
+
 const person = {
 	name: 'Alexander',
 	age: 30,
-	hobbies: ['Hunting', 'War']
+	hobbies: ['Hunting', 'War'],
+	role: Role.AUTHOR
 }
 
-console.log(person.age);
+console.log(person.role);
 
