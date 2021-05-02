@@ -3,3 +3,11 @@ let f = (a: number) => {
 	return a;
 }
 
+const person = {
+	name: 'Alexander',
+	age: 30,
+	hobbies: ['Hunting', 'War']
+}
+
+console.log(person.age);
+
