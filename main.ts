@@ -5,11 +5,18 @@ let f = (a: number) => {
 
 enum Role {SUPERVISOR, READ_ONLY, AUTHOR = 7, GUEST }
 
-const person = {
+const person : {
+	name: string;
+	age: number;
+	hobbies: string[];
+	role: Role;
+	status : [number, string];
+}= {
 	name: 'Alexander',
 	age: 30,
 	hobbies: ['Hunting', 'War'],
-	role: Role.AUTHOR
+	role: Role.AUTHOR,
+	status: [3, 'ACTIVE']
 }
 
 console.log(person.role);
