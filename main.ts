@@ -7,7 +7,7 @@ const person : {
 	role: Role;
 	status : [number, string];
 	is_member: boolean;
-}= {
+} = {
 	name: 'Alexander',
 	age: 30,
 	hobbies: ['Hunting', 'War'],
